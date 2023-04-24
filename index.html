@@ -84,7 +84,9 @@
       <section class="section-bg-dr">
         <div class="container container-01">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="btn-main">Order Service</button>
+          <button class="btn-main" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- 
@@ -597,5 +599,20 @@
         </div>
       </div>
     </footer>
+    <!-- /**
+  |============================
+  | MODAL ICON
+  |============================
+*/ -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
