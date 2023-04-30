@@ -296,9 +296,7 @@ img {
   letter-spacing: 0.02em;
 
   position: relative;
-  transition-property: color;
-  transition-duration: var(--transition-time);
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link::after {
@@ -311,6 +309,8 @@ img {
   position: absolute;
   left: 0px;
   bottom: 0;
+  transition: background-color var(--transition-time)
+    cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current.nav-link::after,
@@ -406,7 +406,8 @@ img {
   height: 88px;
   color: #8e8f99;
   transition: background-color var(--transition-time)
-    cubic-bezier(0.4, 0, 0.2, 1);
+      cubic-bezier(0.4, 0, 0.2, 1),
+    border-color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-link:hover,
 .client-link:focus {
@@ -531,7 +532,9 @@ img {
   border-radius: 4px;
   border: 1px solid #e7e9fc;
   transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1),
-    background-color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
+    background-color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1),
+    border var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-portfolio:hover {
   color: #fff;
@@ -564,6 +567,7 @@ img {
 }
 .link-portfolio {
   display: block;
+  transition: box-shadow var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .link-portfolio:hover,
 .link-portfolio:focus {
@@ -594,6 +598,9 @@ img {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-top: 40px;
+  margin-left: 32px;
+  margin-right: 32px;
 }
 .section-p {
   padding-bottom: 120px;
@@ -601,6 +608,7 @@ img {
 }
 .project-cards {
   width: calc((100% - (24px * 2)) / 3);
+  transition: box-shadow var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .project-cards:hover,
 .project-cards:focus {
@@ -680,11 +688,13 @@ img {
   border-radius: 50%;
 
   cursor: pointer;
+  transition: color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1),
+    background-color var(--transition-time) cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
   color: #ffffff;
-  background: #404bbf;
+  background-color: #404bbf;
 }
 
 .modal-icon {
