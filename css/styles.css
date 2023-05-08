@@ -656,6 +656,8 @@ img {
 
   width: 408px;
   min-height: 584px;
+  padding-left: 24px;
+  padding-right: 24px;
 
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -703,4 +705,44 @@ img {
 .modal-icon:hover,
 .modal-icon:focus {
   fill: currentColor;
+}
+.modal-title {
+  display: block;
+  margin-bottom: 16px;
+  margin-top: 72px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+}
+.modal-form-label {
+  display: block;
+  margin-bottom: 8px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.66;
+}
+.modal-form-field {
+  position: relative;
+}
+.modal-form-input {
+}
+.modal-form-icon {
+}
+.modal-form-message {
+}
+.modal-form-agreement {
+}
+.modal-form-agreement-box {
+}
+.modal-form-agreement-text {
+}
+.modal-form-agreement-link {
+}
+.modal-btn-s {
 }
